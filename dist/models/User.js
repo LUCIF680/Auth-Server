@@ -7,8 +7,7 @@ class User extends sequelize_1.Model {
 }
 User.init({
     id: {
-        type: sequelize_1.DataTypes.INTEGER.UNSIGNED,
-        autoIncrement: true,
+        type: sequelize_1.DataTypes.UUID,
         primaryKey: true,
     },
     name: {
